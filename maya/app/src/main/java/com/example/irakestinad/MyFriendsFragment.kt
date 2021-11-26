@@ -13,22 +13,40 @@ import kotlinx.android.synthetic.main.fragment_my_friends.*
 
 class MyFriendsFragment : Fragment() {
     lateinit var listTeman: ArrayList<MyFriend>
-
+@SupressLint("UseRequireInsteadOfGet")
     private fun simulasiDataTeman() {
         listTeman = ArrayList()
         listTeman.add(
             MyFriend(
-                "Ahmad danil",
-                "Laki-laki",
-                "ahmaddanil2612@gmail.com,",
-                "081235234231",
-                "Probolinggo"
+                "Ira Kestina Damayanti",
+                "Perempuan",
+                "ikestinadamayanti@gmail.com,",
+                "083345678967",
+                "Bali"
             )
         )
         listTeman.add(
             MyFriend(
-                "Nurul huda", "Laki-laki", "Nurulhuda2831@gmail.com",
-                "081231234235", "Probolinggo"
+                "Lisa Manoban", "Perempuan", "lalisamanoban@gmail.com",
+                "082154321178", "Buriram"
+            )
+        )
+        listTeman.add(
+            MyFriend(
+                "Jennie Kim", "Perempuan", "jendeuk98@gmail.com",
+                "082135679921", "Seoul"
+            )
+        )
+        listTeman.add(
+            MyFriend(
+                "Jisoo Kim", "Perempuan", "turtlerabbit@gmail.com",
+                "0821545326789", "Seoul"
+            )
+        )
+        listTeman.add(
+            MyFriend(
+                "Chaeyoung Park", "Perempuan", "rosesarerose@gmail.com",
+                "082167548890", "Australia"
             )
         )
     }
@@ -39,9 +57,8 @@ class MyFriendsFragment : Fragment() {
 
     private fun tampilTeman() {
         rv_listMyfriends.layoutManager = LinearLayoutManager(activity)
-        rv_listMyfriends.adapter = MyFriendAdapter(activity!!, listTeman)
+        rv_listMyfriends.adapter = MyFriendAdapter(activity(), listTeman)
     }
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
