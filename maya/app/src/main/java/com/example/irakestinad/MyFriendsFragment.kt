@@ -51,10 +51,6 @@ class MyFriendsFragment : Fragment() {
         )
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     private fun tampilTeman() {
         rv_listMyfriends.layoutManager = LinearLayoutManager(activity)
         rv_listMyfriends.adapter = MyFriendAdapter(requireActivity(), listTeman)
