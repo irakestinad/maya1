@@ -1,6 +1,6 @@
 package com.example.irakestinad
 
-import android.annotation.SuppressLint
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.fragment_my_friends.*
 
 class MyFriendsFragment : Fragment() {
     lateinit var listTeman: ArrayList<MyFriend>
-@SupressLint("UseRequireInsteadOfGet")
+
     private fun simulasiDataTeman() {
         listTeman = ArrayList()
         listTeman.add(
@@ -57,7 +57,7 @@ class MyFriendsFragment : Fragment() {
 
     private fun tampilTeman() {
         rv_listMyfriends.layoutManager = LinearLayoutManager(activity)
-        rv_listMyfriends.adapter = MyFriendAdapter(activity(), listTeman)
+        rv_listMyfriends.adapter = MyFriendAdapter(requireActivity(), listTeman)
     }
     override fun onCreateView(
         inflater: LayoutInflater,
