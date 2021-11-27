@@ -17,37 +17,22 @@ class MyFriendsFragment : Fragment() {
     private fun simulasiDataTeman() {
         listTeman = ArrayList()
         listTeman.add(
-            MyFriend(
-                "Ira Kestina Damayanti",
-                "Perempuan",
-                "ikestinadamayanti@gmail.com,",
-                "083345678967",
-                "Bali"
-            )
+            MyFriend("Ira Kestina", "perempuan", "irakestina@gmail.com", "082134567891", "Bali")
         )
         listTeman.add(
-            MyFriend(
-                "Lisa Manoban", "Perempuan", "lalisamanoban@gmail.com",
-                "082154321178", "Buriram"
-            )
+            MyFriend("Lalisa Manoban", "perempuan", "llalalisa@gmail.com", "0872134889654", "Kediri")
         )
         listTeman.add(
-            MyFriend(
-                "Jennie Kim", "Perempuan", "jendeuk98@gmail.com",
-                "082135679921", "Seoul"
-            )
+            MyFriend("Jennie Kim", "perempuan", "jendeukie90@gmail.com", "085677324578", "Bondowoso")
         )
         listTeman.add(
-            MyFriend(
-                "Jisoo Kim", "Perempuan", "turtlerabbit@gmail.com",
-                "0821545326789", "Seoul"
-            )
+            MyFriend("Jisoo Kim", "perempuan", "turtlerabbit@gmail.com", "085674321447", "Bandung")
         )
         listTeman.add(
-            MyFriend(
-                "Chaeyoung Park", "Perempuan", "rosesarerose@gmail.com",
-                "082167548890", "Australia"
-            )
+            MyFriend("Chaeyoung Park", "perempuan", "mawarmelati@gmail.com", "087734567829", "Solo")
+        )
+        listTeman.add(
+            MyFriend("Billie Ellish", "perempuan", "bilbellish@gmail.com", "0875678439088", "Nganjuk")
         )
     }
 
